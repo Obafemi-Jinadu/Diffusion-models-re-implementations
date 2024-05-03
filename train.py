@@ -1,3 +1,7 @@
+import numpy as np
+from matplotlib import pyplot as plt
+import torch
+from torchvision import datasets, transforms, models
 from torchvision import datasets, transforms, models
 
 data_transforms = transforms.Compose([transforms.RandomRotation(30),
