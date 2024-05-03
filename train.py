@@ -7,7 +7,7 @@ data_transforms = transforms.Compose([transforms.RandomRotation(30),
                                        transforms.Lambda (lambda im: 2*im -1)
                                        ])
 cuda = torch.device('cuda')  
-train_data = datasets.ImageFolder("/media/obafemi/New Volume/Animal-Pose-Estimation-paper/dogs-vs-cats/train/", transform=data_transforms)
+train_data = datasets.ImageFolder("", transform=data_transforms) # pass in link to dataset
 trainloader = torch.utils.data.DataLoader(train_data, batch_size=64, shuffle=True)
 
     
@@ -31,4 +31,9 @@ for images, _ in trainloader:
         noise_pred = model(noised_im, t)
         noise_added = noise_img - images
         loss= ...# func (noise_pred, noise_added )
-  
+
+# TODOs
+      
+# 1. write U-net code to predict noise
+# 2. clean up train code
+# 3. Use argparse
