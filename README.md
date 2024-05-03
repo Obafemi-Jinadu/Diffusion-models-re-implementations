@@ -1,7 +1,7 @@
 # Diffusion-models-re-implementations
 
 
-# TODOs
+# TODOs on train.py
       
  1. write U-net code to predict noise
 2. clean up train code
