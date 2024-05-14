@@ -1,6 +1,8 @@
 <h1 align="center">Re-implementation of the De-noised Diffusion Probabilistic Model (DDPM)</h1>
 
-![image](https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/faf7f1e31169c2730c555ce263c76bcdc4273907/files/img1.png)
+
+  <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/faf7f1e31169c2730c555ce263c76bcdc4273907/files/img1.png |
+width=100" width="200"/>
 # TODOs on `train.py`
       
  1. write U-net code to predict noise
