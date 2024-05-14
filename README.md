@@ -1,6 +1,6 @@
 <h1 align="center">Re-implementation of the De-noised Diffusion Probabilistic Model (DDPM)</h1>
 
-![image](https://github.com/Obafemi-Jinadu/Survey-on-Low-Light-Image-Enhancement-with-Deep-learning/blob/2620d56bfda48ccbe25c877942c4280b9a62f222/multi%20media%20files/final_img.png)
+![image](https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/faf7f1e31169c2730c555ce263c76bcdc4273907/files/img1.png)
 # TODOs on `train.py`
       
  1. write U-net code to predict noise
