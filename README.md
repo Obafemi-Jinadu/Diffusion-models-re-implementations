@@ -1,4 +1,4 @@
-# Diffusion-models-re-implementations
+# Re-implementation of the De-noised Diffusion Probabilistic Model (DDPM)
 
 
 # TODOs on `train.py`
