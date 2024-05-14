@@ -33,7 +33,7 @@ parser.add_argument('--epochs',default=300, type=int,
 
 args = parser.parse_args()
 
-timesteps = (args.timesteps)
+timesteps = args.timesteps
 data_path = Path(args.data_path)
 img_size = args.img_size
 batch_size = args.batch_size
@@ -51,7 +51,6 @@ train_data = datasets.ImageFolder(data_path, transform=data_transforms)
 trainloader = torch.utils.data.DataLoader(train_data, batch_size=batch_size, shuffle=True)
 
 
-timesteps = timesteps if not None else 300
 betas = torch.linspace(0.0001, 0.02, timesteps)
 cumm_prod = torch.cumprod((1.-betas),-1)
 
