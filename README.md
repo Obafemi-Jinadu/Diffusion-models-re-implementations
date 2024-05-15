@@ -10,7 +10,7 @@ On reparameterization, the forward process is efficiently derived as:
 ## Implementation Highlights
 - Linear noise scheduler was used.
 - Training data was the [Stanford cars](https://www.kaggle.com/datasets/jessicali9530/stanford-cars-dataset) dataset, it was resized to a low resolution of 64 by 64 for faster training.
-- Timesteps T = 300 and T = 1,000 was used.
+- Timesteps T = 300 and T = 1,000 were used.
 - The simple U-Net architecture used to predict noise in the reverse process was adopted from this [work](https://www.youtube.com/watch?v=a4Yfz2FxXiY&t=597s).
 - My trained model weights that generated the output below can be downloaded [here](https://drive.google.com/file/d/1DltfuOa927d-I28rHzmFJXyFrHnPlhwX/view?usp=drive_link).
 - The model was trained for 500 epochs.
