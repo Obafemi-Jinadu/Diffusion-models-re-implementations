@@ -37,7 +37,7 @@ samples.ipynb
 ```
 
 ## Observations/Takeaways & TODOs
-- As stated by the authors of the paper Improved DDPM [2], while linear noise schedule generally works well for high resolution images, this is not the case for low resolution images like a 64 X 64. The end of the forward process is too noisy. This is seen in the results of images generated with T = 1,000 (figure 2). This is why the T was reduced from 1,000 to 300. The cosine scheduler will be explored at T = 1,000.
+- As stated by the authors of the paper [Improved DDPM](https://arxiv.org/abs/2102.09672) [2], while linear noise schedule generally works well for high resolution images, this is not the case for low resolution images like a 64 X 64. The end of the forward process is too noisy. This is seen in the results of images generated with T = 1,000 (figure 2). This is why the T was reduced from 1,000 to 300. The cosine scheduler will be explored at T = 1,000.
 - I would like to ablate on the effect of time embedding. This will be done by adjusting the U-Net code to discard the time-embedding components.
 
 ## Next up
@@ -48,9 +48,9 @@ samples.ipynb
 ## Contact
 ```
 obafemi.jinadu@tufts.edu
+```
 
 ## References
-
 [1] Ho, J., Jain, A. and Abbeel, P., 2020. Denoising diffusion probabilistic models. Advances in neural information processing systems, 33, pp.6840-6851.
 [2] Nichol, A.Q. and Dhariwal, P., 2021, July. Improved denoising diffusion probabilistic models. In International conference on machine learning (pp. 8162-8171). PMLR.
 
