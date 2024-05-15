@@ -1,10 +1,10 @@
 <h1 align="center">Re-implementation of the De-noised Diffusion Probabilistic Model (DDPM)</h1>
 
-[DDPM](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://proceedings.neurips.cc/paper/2020/file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf&ved=2ahUKEwj_t6yIs46GAxUUFVkFHV8RCssQFnoECBMQAQ&usg=AOvVaw3_txjfhqsg67acjkwqOuSf)
+[DDPM](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://proceedings.neurips.cc/paper/2020/file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf&ved=2ahUKEwj_t6yIs46GAxUUFVkFHV8RCssQFnoECBMQAQ&usg=AOvVaw3_txjfhqsg67acjkwqOuSf) is a conditionless diffusion model which means the data generation is not guided or conditioned by anything. The data generation process is only restricted by the training data distribution.
 
 The diffusion model is a generative model that learns to generate data as follows, given training data:
 - The model adds Gaussian noise at incremental steps by a 1st-order Markov chain, the increments are defined by a diffusion rate $\beta$ that linearly increases by a simple linear noise scheduler (a cosine noise scheduler is proposed in the improved DDPM)
-- The reverse process involves learning the 
+- The reverse process involves learning the noise
 On reparameterization, the forward process is efficiently derived as:
  $\alpha$
 
