@@ -13,11 +13,11 @@ On reparameterization, the forward process is efficiently derived as:
 - Timesteps T = 300 and T = 1,000 was used.
 - The simple U-Net architecture used to predict noise in the reverse process was adopted from this [work](https://www.youtube.com/watch?v=a4Yfz2FxXiY&t=597s).
 
-Model generated image sample with timesteps, T = 300
+Model generated image sample with timesteps, T = 300 arrow shows the transition from 300 to 0
  <h1 align="center"><img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="160"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a007590f9335c0b0ac661cfea26deaf805ca2c03/files/img1.png" width="350"/></h1>
 
 
-Model generated image sample with timesteps, T = 1,000
+Model generated image sample with timesteps, T = 1,000 arrow shows the transition from 1,000 to 0
  <h1 align="center"> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="160"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a8355896ea8e49c483e8fcf5ac31db31df38a122/files/img6.png" width="380"/></h1>
 
 
