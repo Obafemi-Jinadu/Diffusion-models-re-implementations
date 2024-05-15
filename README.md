@@ -15,11 +15,11 @@ On reparameterization, the forward process is efficiently derived as:
 - My trained model weights that generated the output below can be downloaded [here](https://drive.google.com/file/d/1DltfuOa927d-I28rHzmFJXyFrHnPlhwX/view?usp=drive_link).
 - The model was trained for 500 epochs.
 
-Model generated image sample with timesteps, T = 300 arrow shows the transition from 300 to 0
+Figure 1: Model generated image sample with timesteps, T = 300 arrow shows the transition from 300 to 0
  <h1 align="center"><img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="195"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/490045ce0869bf381ae6ca94f4bf3128deec61d0/files/img7.png" width="350"/></h1>
 
 
-Model generated image sample with timesteps, T = 1,000 arrow shows the transition from 1,000 to 0
+Figure 2 :Model generated image sample with timesteps, T = 1,000 arrow shows the transition from 1,000 to 0
  <h1 align="center"> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="195"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/70d3c37ebc55fe7656334fba808a3cf88e189557/files/img8.png" width="350"/></h1>
 
 To train, run on terminal: 
@@ -36,16 +36,16 @@ For inference or sample, run the jupyter notebook:
 samples.ipynb
 ```
 # Note:
-`forward_process.py` just shows forward process on a single image it just helped me learn and practically visualize what was happening in the forward diffusion process, the code is unoptimized for `batch_size>1`. The optimized code has been written in `train.py`. 
+`forward_process.py` just shows the forward process on a single image it just helped me learn and practically visualize what was happening in the forward diffusion process, the code is unoptimized for `batch_size>1`. The optimized code has been written in `train.py`. 
 
 
 ## Observations/Takeaways & TODOs
-- As stated by the authors of the paper [Improved DDPM](https://arxiv.org/abs/2102.09672) [2], while linear noise schedule generally works well for high resolution images, this is not the case for low resolution images like a 64 X 64. The end of the forward process is too noisy. This is seen in the results of images generated with T = 1,000 (figure 2). This is why the T was reduced from 1,000 to 300.
+- As stated by the authors of the paper [Improved DDPM](https://arxiv.org/abs/2102.09672) [2], while linear noise schedule generally works well for high-resolution images, this is not the case for low-resolution images like a 64 X 64. The end of the forward process is too noisy. This is seen in the results of images generated with T = 1,000 (figure 2). This is why the T was reduced from 1,000 to 300.
 - To this end, the cosine scheduler will be explored at T = 1,000.
 - I would also like to ablate on the effect of time embedding. This will be done by adjusting the U-Net code to discard the time-embedding components.
 
 ## Next up
-- Expolore conditioned diffusion models conditioned on clasess, or text for multimodal vision-language (VLM).
+- Explore conditioned diffusion models conditioned on classes or text for multimodal vision-language models (VLM).
 - Explore more advanced model architectures in place of U-Net.
 - Explore some more real-world applications of diffusion models.
 
