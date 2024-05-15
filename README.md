@@ -34,6 +34,10 @@ For inference or sample, run the jupyter notebook:
 ```
 samples.ipynb
 ```
+
+## Observations/Takeaways
+- 
+
       
  1. write U-net code to predict noise
 2. clean up train code
