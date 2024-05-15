@@ -20,6 +20,8 @@ Model generated image sample with timesteps, T = 300 arrow shows the transition 
 Model generated image sample with timesteps, T = 1,000 arrow shows the transition from 1,000 to 0
  <h1 align="center"> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="160"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a8355896ea8e49c483e8fcf5ac31db31df38a122/files/img6.png" width="380"/></h1>
 
+ 
+
 
  
 
