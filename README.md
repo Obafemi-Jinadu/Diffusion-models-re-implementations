@@ -41,7 +41,7 @@ samples.ipynb
 
 
 ## Observations/Takeaways & TODOs
-- As stated by the authors of the paper [Improved DDPM](https://arxiv.org/abs/2102.09672) [2], while linear noise schedule generally works well for high-resolution images, this is not the case for low-resolution images like a 64 X 64. The end of the forward process is too noisy. This is seen in the results of images generated with T = 1,000 (figure 2). This is why the T was reduced from 1,000 to 300.
+- As stated by the authors of the paper [Improved DDPM](https://arxiv.org/abs/2102.09672) [2], while a linear noise scheduler generally works well for high-resolution images, this is not the case for low-resolution images like a 64 X 64. The end of the forward process is too noisy. This is seen in the results of images generated with T = 1,000 (figure 2). This is why the T was reduced from 1,000 to 300.
 - To this end, the cosine scheduler will be explored at T = 1,000.
 - I would also like to ablate on the effect of time embedding. This will be done by adjusting the U-Net code to discard the time-embedding components.
 
