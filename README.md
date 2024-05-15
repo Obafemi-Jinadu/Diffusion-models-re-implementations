@@ -1,6 +1,6 @@
 <h1 align="center">Re-implementation of the Denoising Diffusion Probabilistic Model (DDPM)</h1>
 
-[The denoising diffusion probabislitc model (DDPM)](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://proceedings.neurips.cc/paper/2020/file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf&ved=2ahUKEwj_t6yIs46GAxUUFVkFHV8RCssQFnoECBMQAQ&usg=AOvVaw3_txjfhqsg67acjkwqOuSf) [1] is a conditionless generative model which means the data generation is not guided or conditioned by anything like a text or a class. It randomly generates new data based on the training data distribution.
+[The denoising diffusion probabilistic model (DDPM)](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://proceedings.neurips.cc/paper/2020/file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf&ved=2ahUKEwj_t6yIs46GAxUUFVkFHV8RCssQFnoECBMQAQ&usg=AOvVaw3_txjfhqsg67acjkwqOuSf) [1] is a conditionless generative model which means the data generation is not guided or conditioned by anything like a text or a class. It randomly generates new data based on the training data distribution.
 
 The diffusion model is a generative model that learns to generate data as follows, given training data:
 - The model adds Gaussian noise at incremental steps by a 1st-order Markov chain, the increments are defined by a non-learnable diffusion rate $\beta$ that linearly increases by a simple linear noise scheduler (or a cosine noise scheduler is proposed in the improved DDPM). This is called the forward process, given by $q(x_{1:T}|x_{0})$. 
@@ -15,11 +15,11 @@ On reparameterization, the forward process is efficiently derived as:
 - My trained model weights that generated the output below can be downloaded [here](https://drive.google.com/file/d/1DltfuOa927d-I28rHzmFJXyFrHnPlhwX/view?usp=drive_link).
 - The model was trained for 500 epochs.
 
-Figure 1: Model generated image sample with timesteps, T = 300 arrow shows the transition from 300 to 0
+Figure 1: Model generated image samples with timesteps, T = 300 arrow shows the transition from 300 to 0
  <h1 align="center"><img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="195"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/490045ce0869bf381ae6ca94f4bf3128deec61d0/files/img7.png" width="350"/></h1>
 
 
-Figure 2 :Model generated image sample with timesteps, T = 1,000 arrow shows the transition from 1,000 to 0
+Figure 2: Model generated image samples with timesteps, T = 1,000 arrow shows the transition from 1,000 to 0
  <h1 align="center"> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="195"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/70d3c37ebc55fe7656334fba808a3cf88e189557/files/img8.png" width="350"/></h1>
 
 To train, run on terminal: 
