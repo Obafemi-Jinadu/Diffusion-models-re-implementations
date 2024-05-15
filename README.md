@@ -29,6 +29,11 @@ Or to train with defaults. On terminal, run:
 ```
 python train.py --data_path "str" 
 ```
+
+For inference or sample, run the jupyter notebook:
+```
+samples.ipynb
+```
       
  1. write U-net code to predict noise
 2. clean up train code
