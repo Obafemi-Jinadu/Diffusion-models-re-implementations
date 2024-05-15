@@ -16,11 +16,8 @@ Model output, 300 timesteps
 </p>
 
 
- Model output, 300 timesteps             |  Model output, 1,000 timesteps
+ Model output with 300 timesteps             |  Model output with 1,000 timesteps
 :-------------------------:|:-------------------------:
-
-label 1 | label 2
---- | ---
 <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a007590f9335c0b0ac661cfea26deaf805ca2c03/files/img1.png" width="350"/>  |  <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a8355896ea8e49c483e8fcf5ac31db31df38a122/files/img6.png" width="380"/>
 
 
