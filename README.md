@@ -7,7 +7,10 @@ The diffusion model is a generative model that learns to generate data as follow
 - The reverse process involves the model learning to iteratively de-noise random Gaussian samples until pristine data is generated. This is done by learning to predict the noise or Gaussian transitions at each time step from timestep t = T to t =0 given by $p_{\theta}(x_{0:T})$
 
 On reparameterization, the forward process is efficiently derived as:
-
+## Implementation Highlights
+- Linear noise scheduler was used.
+- Training data was the [Stanford cars](https://www.kaggle.com/datasets/jessicali9530/stanford-cars-dataset) dataset, it was resized to a low resolution of 64 by 64 for faster training.
+- Timesteps T = 300 and T = 1,000 was used.
 
 Model generated image sample with timesteps, T = 300
  <h1 align="center"><img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="160"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a007590f9335c0b0ac661cfea26deaf805ca2c03/files/img1.png" width="350"/></h1>
