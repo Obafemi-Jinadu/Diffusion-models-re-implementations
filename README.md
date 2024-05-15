@@ -13,6 +13,7 @@ On reparameterization, the forward process is efficiently derived as:
 - Timesteps T = 300 and T = 1,000 was used.
 - The simple U-Net architecture used to predict noise in the reverse process was adopted from this [work](https://www.youtube.com/watch?v=a4Yfz2FxXiY&t=597s).
 - My trained model weights that generated the output below can be downloaded [here](https://drive.google.com/file/d/1DltfuOa927d-I28rHzmFJXyFrHnPlhwX/view?usp=drive_link).
+- The model was trained for 500 epochs.
 
 Model generated image sample with timesteps, T = 300 arrow shows the transition from 300 to 0
  <h1 align="center"><img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="195"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/490045ce0869bf381ae6ca94f4bf3128deec61d0/files/img7.png" width="350"/></h1>
@@ -36,8 +37,22 @@ samples.ipynb
 ```
 
 ## Observations/Takeaways & TODOs
-- As stated by the authors of the paper Improved DDPM [], while linear noise schedule generally works well for high resolution images, this is not the case for low resolution images like a 64 X 64. The end of the forward process is too noisy. This is seen in the results of images generated with T = 1,000 (figure 2). This is why the T was reduced from 1,000 to 300. The cosine scheduler will be explored at T = 1,000.
+- As stated by the authors of the paper Improved DDPM [2], while linear noise schedule generally works well for high resolution images, this is not the case for low resolution images like a 64 X 64. The end of the forward process is too noisy. This is seen in the results of images generated with T = 1,000 (figure 2). This is why the T was reduced from 1,000 to 300. The cosine scheduler will be explored at T = 1,000.
 - I would like to ablate on the effect of time embedding. This will be done by adjusting the U-Net code to discard the time-embedding components.
+
+## Next up
+- Expolore conditioned diffusion models conditioned on clasess, or text for multimodal vision-language (VLM).
+- Explore more advanced model architectures in place of U-Net
+- Explore some more real-world applications of diffusion models
+
+## Contact
+```
+obafemi.jinadu@tufts.edu
+
+## References
+
+[1] Ho, J., Jain, A. and Abbeel, P., 2020. Denoising diffusion probabilistic models. Advances in neural information processing systems, 33, pp.6840-6851.
+[2] Nichol, A.Q. and Dhariwal, P., 2021, July. Improved denoising diffusion probabilistic models. In International conference on machine learning (pp. 8162-8171). PMLR.
 
       
 
