@@ -28,7 +28,7 @@ python train.py --data_path "str" --timesteps "int" --img_size "int" --batch_siz
 Or to train with defaults. On terminal, run:
 ```
 python train.py --data_path "str" 
- 
+```
       
  1. write U-net code to predict noise
 2. clean up train code
