@@ -8,29 +8,10 @@ Model generated image sample with timesteps, T = 1,000
  <h1 align="center"> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="160"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a8355896ea8e49c483e8fcf5ac31db31df38a122/files/img6.png" width="380"/></h1>
 
 
- Model output, 300 timesteps
-
- <p float="left">
-<img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="160"/>
  
-  <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a007590f9335c0b0ac661cfea26deaf805ca2c03/files/img1.png" width="320"/>
-
-<img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/448ff48bd2fc560866a0caf3377d6d64a227cb8d/files/sep.png" width="4.5"/>
-  
-  
-  <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a8355896ea8e49c483e8fcf5ac31db31df38a122/files/img6.png" width="350"/>
-</p>
 
 
- |Model output with 300 timesteps             |  Model output with 1,000 timesteps
--------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/5122042281f550bf2984d4b5189adca8d20c64a5/files/descrip.png" width="260"/>|<img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a007590f9335c0b0ac661cfea26deaf805ca2c03/files/img1.png" width="350"/>  |  <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a8355896ea8e49c483e8fcf5ac31db31df38a122/files/img6.png" width="380"/>
-
-
-
-
-    <img src="https://github.com/Obafemi-Jinadu/Survey-on-Low-Light-Image-Enhancement-with-Deep-learning/blob/de2effb13ab47f7ee64cb52602c24861f19106b6/multi%20media%20files/city%20street_clear_a85cad42-337048b5.jpg" width="200"/>
-# TODOs on `train.py`
+ 
       
  1. write U-net code to predict noise
 2. clean up train code
