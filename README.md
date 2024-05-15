@@ -17,8 +17,8 @@ Model generated image sample with timesteps, T = 300 arrow shows the transition 
  <h1 align="center"><img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="195"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/490045ce0869bf381ae6ca94f4bf3128deec61d0/files/img7.png" width="350"/></h1>
 
 
-Model generated image sample with timesteps, T = 1,000 arrow shows the transition from 1,000 to 0 (Note: transition starts at T-100)
- <h1 align="center"> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="160"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/70d3c37ebc55fe7656334fba808a3cf88e189557/files/img8.png" width="350"/></h1>
+Model generated image sample with timesteps, T = 1,000 arrow shows the transition from 1,000 to 0
+ <h1 align="center"> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/4caeeaf9560c278babd95e5527795a6c49139a14/files/arrow.png" width="195"/> <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/70d3c37ebc55fe7656334fba808a3cf88e189557/files/img8.png" width="350"/></h1>
 
  
 
