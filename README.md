@@ -35,6 +35,9 @@ For inference or sample, run the jupyter notebook:
 ```
 samples.ipynb
 ```
+# Note:
+`forward_process.py` just shows forward process on a single image it just helped me learn and practically visualize what was happening in the forward diffusion process, the code is unoptimized for `batch_size>1`. The optimized code has been written in `train.py`. 
+
 
 ## Observations/Takeaways & TODOs
 - As stated by the authors of the paper [Improved DDPM](https://arxiv.org/abs/2102.09672) [2], while linear noise schedule generally works well for high resolution images, this is not the case for low resolution images like a 64 X 64. The end of the forward process is too noisy. This is seen in the results of images generated with T = 1,000 (figure 2). This is why the T was reduced from 1,000 to 300. The cosine scheduler will be explored at T = 1,000.
@@ -52,10 +55,7 @@ obafemi.jinadu@tufts.edu
 
 ## References
 [1] Ho, J., Jain, A. and Abbeel, P., 2020. Denoising diffusion probabilistic models. Advances in neural information processing systems, 33, pp.6840-6851.
+
 [2] Nichol, A.Q. and Dhariwal, P., 2021, July. Improved denoising diffusion probabilistic models. In International conference on machine learning (pp. 8162-8171). PMLR.
 
       
-
-
-    # Note:
-    `forward_process.py` just shows forward process on single image, code is unoptimized for `batch_size>1`. The optimized code has been written in `train.py`
