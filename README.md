@@ -2,6 +2,12 @@
 
 [DDPM](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://proceedings.neurips.cc/paper/2020/file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf&ved=2ahUKEwj_t6yIs46GAxUUFVkFHV8RCssQFnoECBMQAQ&usg=AOvVaw3_txjfhqsg67acjkwqOuSf)
 
+The diffusion model is a generative model that learns to generate data as follows:
+Given training data:
+-The model adds Gaussian noise at incremental steps by a 1st-order Markov chain, given by the diffusion rate $\beta$
+-The reverse process involves learning the 
+On reparameterization, the forward process is efficiently derived as:
+ $\alpha$
 
 
 Model generated image sample with timesteps, T = 300
