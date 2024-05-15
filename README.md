@@ -18,7 +18,7 @@ Model output, 300 timesteps
 <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/448ff48bd2fc560866a0caf3377d6d64a227cb8d/files/sep.png" width="4.5"/>
   
   
-  <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a8355896ea8e49c483e8fcf5ac31db31df38a122/files/img6.png" width="380"/>
+  <img src="https://github.com/Obafemi-Jinadu/Diffusion-models-re-implementations/blob/a8355896ea8e49c483e8fcf5ac31db31df38a122/files/img6.png" width="350"/>
 </p>
 
 
